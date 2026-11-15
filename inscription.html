@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscription gratuite – DEDAL des couleurs</title>
+<meta name="description" content="Recevez les nouvelles œuvres et les prochaines expositions de la galerie Dedal des Couleurs : inscrivez-vous gratuitement avec votre nom, prénom et e-mail.">
+<meta property="og:title" content="Inscription gratuite – DEDAL des couleurs">
+<meta property="og:description" content="Recevez les nouvelles œuvres et les prochaines expositions de la galerie Dedal des Couleurs : inscrivez-vous gratuitement avec votre nom, prénom et e-mail.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Poppins:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="entete">
+<div class="cadre">
+<a class="logo" href="index.html"><img src="images/logo-clair.png" width="340" height="130" alt="DEDAL des couleurs, retour à l’accueil"></a>
+<button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><path d="M3 6h20M3 13h20M3 20h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+<nav class="menu" id="menu" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a href="galerie.html">La galerie</a></li><li><a href="oeuvres.html">Œuvres</a></li><li><a href="inscription.html" aria-current="page">Inscription</a></li></ul></nav>
+</div>
+</header>
+<main id="contenu">
+<div class="cadre inscription">
+<div>
+<p class="etiquette">Inscription gratuite</p>
+<h1>Restez informé</h1>
+<p>Recevez les nouvelles œuvres et les prochaines expositions de la galerie.</p>
+</div>
+<form class="carte" id="form" novalidate>
+<div class="champ"><label for="nom">Nom</label><input id="nom" name="nom" type="text" placeholder="Votre nom" autocomplete="family-name" required></div>
+<div class="champ"><label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" placeholder="Votre prénom" autocomplete="given-name" required></div>
+<div class="champ"><label for="mail">E-mail</label><input id="mail" name="mail" type="email" placeholder="prenom@exemple.fr" autocomplete="email" required></div>
+<button class="bouton" type="submit">Je m’inscris</button>
+<p class="note">Tous les champs sont obligatoires.</p>
+<p id="retour" role="status"></p>
+</form>
+</div>
+</main>
+<footer class="pied">
+<div class="cadre">
+<a class="logo" href="index.html"><img src="images/logo-sombre.png" width="340" height="130" alt="DEDAL des couleurs, retour à l’accueil" loading="lazy"></a>
+<dl class="coord">
+<div><dt>Adresse</dt><dd>10 rue de la République, 75000 Paris</dd></div>
+<div class="tel"><dt>Téléphone</dt><dd><a href="tel:+33163458556">01 63 45 85 56</a></dd></div>
+<div><dt>E-mail</dt><dd><a href="mailto:dedal@gmail.com">dedal@gmail.com</a></dd></div>
+</dl>
+</div>
+</footer>
+<script src="js/menu.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

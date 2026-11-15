@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les œuvres – DEDAL des couleurs</title>
+<meta name="description" content="Une sélection d’œuvres de la mouvance expressionniste : paysages et portraits, huile sur toile, prix sur demande.">
+<meta property="og:title" content="Les œuvres – DEDAL des couleurs">
+<meta property="og:description" content="Une sélection d’œuvres de la mouvance expressionniste : paysages et portraits, huile sur toile, prix sur demande.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Poppins:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="entete">
+<div class="cadre">
+<a class="logo" href="index.html"><img src="images/logo-clair.png" width="340" height="130" alt="DEDAL des couleurs, retour à l’accueil"></a>
+<button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><path d="M3 6h20M3 13h20M3 20h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+<nav class="menu" id="menu" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a href="galerie.html">La galerie</a></li><li><a href="oeuvres.html" aria-current="page">Œuvres</a></li><li><a href="inscription.html">Inscription</a></li></ul></nav>
+</div>
+</header>
+<main id="contenu">
+<div class="cadre section">
+<h1 class="titre-page">Les œuvres</h1>
+<p class="intro">Une sélection d’œuvres de la mouvance expressionniste.</p>
+<div class="filtres" role="group" aria-label="Filtrer les œuvres">
+<button type="button" data-filtre="toutes" aria-pressed="true">Toutes</button>
+<button type="button" data-filtre="paysages" aria-pressed="false">Paysages</button>
+<button type="button" data-filtre="portraits" aria-pressed="false">Portraits</button>
+</div>
+<ul class="grille"><li class="oeuvre-item" data-cat="paysages"><figure class="oeuvre "><img src="images/paysage-bleu.jpg" width="713" height="573" alt="Paysage expressionniste : un arbre sombre devant un ciel jaune et bleu, au-dessus de bandes de collines rouges et vertes" loading="lazy"><figcaption><span class="nom">Paysage bleu</span>Huile sur toile<span class="prix">Prix sur demande</span></figcaption></figure></li><li class="oeuvre-item" data-cat="abstrait"><figure class="oeuvre "><img src="images/composition-rouge.jpg" width="713" height="573" alt="Composition abstraite de touches rouges, orange et bleues traversées de lignes noires" loading="lazy"><figcaption><span class="nom">Composition rouge</span>Huile sur toile<span class="prix">Prix sur demande</span></figcaption></figure></li><li class="oeuvre-item" data-cat="portraits"><figure class="oeuvre "><img src="images/figure-ocre.jpg" width="713" height="573" alt="Portrait d’un visage ocre aux cheveux sombres, sur un fond bleu et rouge" loading="lazy"><figcaption><span class="nom">Figure ocre</span>Huile sur toile<span class="prix">Prix sur demande</span></figcaption></figure></li><li class="oeuvre-item" data-cat="paysages"><figure class="oeuvre "><img src="images/village-rouge.jpg" width="713" height="573" alt="Paysage aux tons orange et rouges, avec un arbre sombre au premier plan" loading="lazy"><figcaption><span class="nom">Village rouge</span>Huile sur toile<span class="prix">Prix sur demande</span></figcaption></figure></li><li class="oeuvre-item" data-cat="paysages"><figure class="oeuvre "><img src="images/ciel-jaune.jpg" width="713" height="573" alt="Paysage de bandes bleues et vertes sous un ciel jaune orangé, avec une fleur rouge" loading="lazy"><figcaption><span class="nom">Ciel jaune</span>Huile sur toile<span class="prix">Prix sur demande</span></figcaption></figure></li><li class="oeuvre-item" data-cat="portraits"><figure class="oeuvre "><img src="images/portrait-vert.jpg" width="713" height="573" alt="Portrait d’une femme aux cheveux roux, sur un fond vert et bleu" loading="lazy"><figcaption><span class="nom">Portrait vert</span>Huile sur toile<span class="prix">Prix sur demande</span></figcaption></figure></li></ul>
+<div class="centre"><button class="bouton contour" id="plus" type="button">Voir plus d’œuvres</button><p id="plus-info" role="status"></p></div>
+</div>
+</main>
+<footer class="pied">
+<div class="cadre">
+<a class="logo" href="index.html"><img src="images/logo-sombre.png" width="340" height="130" alt="DEDAL des couleurs, retour à l’accueil" loading="lazy"></a>
+<dl class="coord">
+<div><dt>Adresse</dt><dd>10 rue de la République, 75000 Paris</dd></div>
+<div class="tel"><dt>Téléphone</dt><dd><a href="tel:+33163458556">01 63 45 85 56</a></dd></div>
+<div><dt>E-mail</dt><dd><a href="mailto:dedal@gmail.com">dedal@gmail.com</a></dd></div>
+</dl>
+</div>
+</footer>
+<script src="js/menu.js"></script>
+<script src="js/oeuvres.js"></script>
+</body>
+</html>
